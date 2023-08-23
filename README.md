@@ -7,6 +7,6 @@ Input/Parameters: filepath to raw CoastSat transect data
 Output: 4 unique CSV's: amplitude, <br>
 month of maximum shoreline position for that transect, <br>
 month of minimum shoreline position for that transect, <br>
-monthly mean detrended shoreline positions for each transect <br>
+monthly mean detrended shoreline positions for each transect 
 <br><br>
 Dependencies: pandas, calendar, statsmodels, matplotlib
