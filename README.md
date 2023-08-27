@@ -1,4 +1,5 @@
 # calfornia-coastal-change
+This branch is for CoastSeg data which uses different nomenclature and numbering systems than CoastSat. 
 Program Process: analyzes shoreline position data by resampling, interpolating, 
 detrending, and generating basic statistics on data
 <br><br>
