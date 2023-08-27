@@ -49,8 +49,6 @@ def main():
     # run stl
     # custom function: stl()
     trend_data = stl(df_reclassed)
-    trend_data.to_csv('trend_data.csv')
-    df_original.to_csv('og_data.csv')
 
     # detrend
     # custom function: detrend()
@@ -217,7 +215,6 @@ def detrend(original_data, trend_data):
     df_detrended = pd.concat(detrended_data_dict.values(), axis=1,
                              keys=detrended_data_dict.keys())
 
-    df_detrended.to_csv('test.csv')
 
     # return
     return df_detrended
