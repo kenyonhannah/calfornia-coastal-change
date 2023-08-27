@@ -20,6 +20,7 @@ Dependencies: pandas, calendar, statsmodels, matplotlib
 def main():
     # get filepath of raw data csv from user
     filepath = input('CoastSeg Raw Transect Data Filepath: ')
+    beach_id = input('Name or abbreviation of the beach for filename: ')
 
     # save to dataframe
     # pandas function: read_csv()
@@ -58,9 +59,6 @@ def main():
     # mean monthly detrended data
     # custom function: monthly_mean()
     monthly_mean_data = monthly_mean(detrended_data)
-
-    # grab beach id
-    beach_id = monthly_mean_data.columns[1][7:11]
 
     # save monthly means to ArcGIS Pro compatible format
     # custom function: reformat_monthly_mean()
